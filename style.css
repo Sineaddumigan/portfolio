@@ -172,9 +172,9 @@ a {
 
 
 /* Specific classes used for the custom background images for each section */
-.project1 { background-image: url('/images/projects-mtc.png'); }
-.project2 { background-image: url('/images/projects-ms.png'); }
-.project3 { background-image: url('/images/projects-fws.png');}
+.project1 { background-image: url('./images/projects-mtc.png'); }
+.project2 { background-image: url('./images/projects-ms.png'); }
+.project3 { background-image: url('./images/projects-fws.png');}
 
 /* Again, to achieve darkened image effect, we need to move interior content above the background image */
 .home-indiv-projects-header-content {
