@@ -51,6 +51,11 @@ a {
   color:#3BD981 ;
 }
 
+body {
+  margin: 0px;
+}
+
+
 /* Hero */
 
 .hero {
@@ -83,7 +88,9 @@ a {
   width: 400px;
 }
 
-.portfolio-nav {
+/* navigation */
+
+.buttons-nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -91,20 +98,24 @@ a {
 }
 
 
-.portfolio-nav-element {
+.nav-button-element {
   cursor: pointer;
   padding: 10px 30px;
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
+  border-style: none;
+  background-color: transparent;
 }
 
-.portfolio-nav-element-selected {
+.nav-button-element-selected {
   cursor: pointer;
   padding: 10px 30px;
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
+  border-style: none;
+  background-color: transparent;
   border-bottom: 4px solid #3BD981;
   
 }
@@ -117,6 +128,7 @@ a {
 
 .header-description-element {
   padding: 50px 50px 50px 150px;
+  width: 50%;
 }
 
 
@@ -223,4 +235,28 @@ a {
   background-color: #1c884c;
 }
 
+/* Project page sections */
 
+.panel-group {
+  display: flex;
+  overflow: hidden;
+}
+
+.panel-element {
+width:50%;
+
+}
+
+.panel-element-description {
+padding: 50px 50px 50px 150px;
+background-color: #3BD981;
+float: left;
+padding-bottom: 1000px;
+margin-bottom: -1000px;
+}
+
+.panel-element-image {
+float: left;
+padding-bottom: 1000px;
+margin-bottom: -1000px;
+}
