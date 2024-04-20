@@ -2,7 +2,7 @@
 <html lang="en">
     
 <head>
-    <title>Sinead Dumigan Portfolio</title>
+    <title>Multiplication tables check</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -14,27 +14,51 @@
 
     <!-- Link to stylesheet -->
     <link rel="stylesheet" href="./style.css">
-
 </head>
 
 
 <body>
-    <div class="hero-project1" >
+
+    
+    <div class="hero-casestudy" >
+
+        
+     
+       
     
         <header class="portfolio-header">
-            <div class="portfolio-logo-container">
-            <img class="sinead-logo" src="./images/sinead-logo.svg" alt="Sinead Logo">
-            </div>
-            <nav class="buttons-nav">
-                <button class="nav-button-element" onclick="document.location='./index.html'">Home</button>
-                <button class="nav-button-element-selected" onclick="document.location='#'">Projects</button>
-                <button class="nav-button-element" onclick="document.location='#'">About me</button>
+
+            <!-- Animated logo using javascript -->
+            <svg  class="animate-logo"  height="50px"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Website-2024-(GA)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <circle id="large-circle" fill="#3BD981" cx="25" cy="25" r="25"></circle>
+                    <circle id="medium-circle" fill="#4CBDFD" cx="70.0357143" cy="23.952381" r="15"></circle>
+                    <circle id="small-circle" fill="#3BD981" cx="99.6071429" cy="23.9880952" r="10"></circle>
+                </g>
+            </svg>
+        
+             <!-- Navigation menu -->
+            <nav class="navbar">
+                <div class="nav-menu">
+                    <button class="nav-button-element" onclick="document.location='./index.html'">Home</button>
+                    <button class="nav-button-element-selected" onclick="document.location='./all-projects.html'">Projects</button>
+                    <button class="nav-button-element" onclick="document.location='./about-me.html'">About me</button>
+                </div>
             </nav>
+        
+              <!-- Hamburger menu -->
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        
         </header>
 
+        
 
-        <div class="header-description">
-            <div class="header-description-element">
+        <div class="hero-description">
+            <div class="hero-element">
                 <h1>Multiplication Tables Check</h1>
                 <p>Working with the Standards and Testing Agency (STA) to create the first compulsory online digital assessment tool for primary school pupils across the UK.</p>
             </div>
@@ -42,7 +66,9 @@
 
     </div>
 
-    <section class="panel-group">
+
+
+    <section class="panel-group" >
         <div class="panel-element">
             <div class="panel-element-description">
                 <h2>Background</h2>
@@ -51,18 +77,151 @@
                 <p>The Multiplication tables check works by displaying each question for an amount of time that allows for recall and not calculation.</p> 
             </div>   
         </div>
-        <div class="panel-element panel-element-image"><img src="./images/projects-panel-mtc.png" alt="Student entered their times tables into a computer screen"></div>
+
+        <div class="panel-element">
+            <img src="./images/projects-panel-mtc.png" alt="Student entered their times tables into a computer screen">
+        </div>
+
+    </section>
+
+
+    <section class="panel-group-1">
+
+        <div class="laptop">
+            <img src="./images/mtc-laptop.png" width="450px" alt="laptop with the school administration page of the multiplication tables check">
+        </div>
+
+        <div class="header-description">
+            <div class="challenge">
+                <h2>Challenges</h2>
+                <p>Understanding the technical landscape, the quality of connectivity that schools have and the situation of their ICT.</p>
+                <p>Creating a service that adds as little burden as possible to schools, creating a service that is flexible enough to fit into schools’ busy schedules. Providing great UX so that teachers can complete tasks quickly and with ease.</p>
+                <p>Basing designs on the GOV.UK Design System but adding content and graphics to adapt it so that it is appropriate for children.</p>
+                <p>Creating an assessment that is accessible for as many children as possible designing colour contrast, font configurations, in-built screen readers etc,  so disabled pupils can independently take the check.</p>
+            </div>
+        </div>
+    
+    
+    </section >
+        
+
+    <section class="grey-panel header-description">
+
+        <div class="role-left">
+            <h2 style="color: white;">My role</h2>
+            <ul class="grey-body">
+                <li>Led on design</li>
+                <li>Went to schools across to UK with the researcher to observe how the system could be used in context
+                    <ul>
+                        <li>Discovery: observed the context and environment that the service that would be used in
+                        </li>
+                        <li>Alpha and Beta: observed teachers administering the MTC and pupils taking it
+                        </li>
+                        <li>Spoke to the teachers and pupils about their experience</li>
+                    </ul>
+                </li>
+                <li>Enagaed with stakeholders throughout the design process to understand the needs and priorities</li>
+            </ul>
+        </div>
+
+        <div class="role-right">
+            <ul class="grey-body">
+                <br>
+                <br>
+                <li>Prioritised design features with the team </li>
+                <li>Created user flows</li>
+                <li>Created a sitemap</li>
+                <li>Prototypes</li>
+                <li>Designed flows for pupils with access arrangements</li>
+                <li>Liaised with developers, using their technical skills to agree best ways forward in the design</li>
+                <li>Created the user interface designs for the service - especially the pupil check so that it would be optimised to work with a range of devices</li>
+                <li>Created design specifications for front-end developers</li>
+            </ul>
+        </div>
 
     </section>
 
 
 
-    <div class="header-description">
-        <div class="header-description-element">
-            <h1>Multiplication Tables Check</h1>
-            <p>Working with the Standards and Testing Agency (STA) to create the first compulsory online digital assessment tool for primary school pupils across the UK.</p>
+    <section class="panel-group-2">
+        <div class="team">
+            <h2>What the team did</h2>
+            <p>The team worked in Agile and engaged with the STA, test devleopers and schools across the UK to create a brand new service. There are 4 parts to the service:</p>
+            <ul class="light-grey-body">
+                <li>Service manager to manage check windows, upload pupil data, edit time for questions in the check, manage settings for schools in different time zones</li>
+                <li>Test developers to upload and view forms, assign forms to check windows and download pupil check data</li>
+                <li>Schools administration to register pupils, group pupils, attendance, access arrangements, mock area, generate passwords and PINs, restarts, Headteacher declaration form and see results
+                </li>
+                <li>Pupils to take the ‘check’. Designing for a range of devices and a range of access arrangements.</li>
+            </ul> 
         </div>
+
+        <div class="team">
+            <div>
+                <br><br><br><br>
+                <p>Research was done to understand the different types of schools that exist across the UK, their digital capacities and any issues a digital assessment would impose on them. We tested and iterated designs and prototypes to help build out understanding of how best to meet the users’ needs.</p>
+            </div>  
+        </div>
+    </section >
+
+
+
+
+<section class="casestudy-background">
+   
+<img  src="./images/mtc-accessibility.png" width="1000px" alt="laptops showing the accessibilyu settings for the multiplication tables check">
+
+        
+</section >
+
+
+
+<section class="panel-group-2">
+    <div class="team">
+        <h2>An inclusive service</h2>
+        <p>We tested the MTC with a range of user on a range of devices to ensure the service was as inclusive as possible.</p>
+        <p>The devices we design for and tested with were mobile phones, tablets, latptops and desktops.</p>
+        <p>We considered pupils with visual impairments, processing needs, physical disabilities, poor IT skills, pupils on the austistic spectrum, cognitive needs (e.g. dyslexia and dyscalculia) and English as an additional language.</p>
+
     </div>
+
+    <div class="team">
+        <br><br><br><br>
+        <div>
+            <p>Access arrangement designed for our service:</p>
+            <ul class="light-grey-body">
+                <li>Colour and contrast</li>
+                <li>Font size</li>
+                <li>Questions reader</li>
+                <li>Audible time alert</li>
+                <li>Input assistant</li>
+                <li>Next question button (30-min time limit)</li>
+                <li>Removal of on-screen number pad</li>
+            </ul> 
+        </div>  
+    </div>
+</section >
+
+
+
+<section class="panel-group" >
+    <div class="panel-element">
+        <div class="panel-element-description">
+            <h2>Outcome</h2>
+            <p>The project met all service standards and received 18/18 in the GDS assessment. It has been rolled out to schools and is currently in use.</p> 
+        </div>   
+    </div>
+
+    <div class="panel-element">
+        <img src="./images/mtc-outcome.png" alt="Student entered their times tables into a computer screen">
+    </div>
+
+</section>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="app.js"></script>
 
 </body>
 

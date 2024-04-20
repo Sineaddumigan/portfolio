@@ -1,3 +1,12 @@
+*{
+  padding:0;
+  margin:0;
+ 
+}
+
+
+
+
 /* Google fonts */
 
 .calistoga-regular {
@@ -25,6 +34,7 @@ h1 {
     font-weight: 400;
     font-style: normal;
     font-size: 38px;
+    margin-bottom: 40px;
 }
 
 h2 {
@@ -32,15 +42,27 @@ h2 {
   font-weight: 400;
   font-style: normal;
   font-size: 32px;
+  margin-bottom: 30px;
 }
 
-/* Paragraphs */
+h3 {
+  font-family: "Calistoga", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 21px;
+  text-align: left;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* Paragraphs, links, body */
 
 p {
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
+  margin-bottom: 20px;
 }
 
 a {
@@ -51,23 +73,38 @@ a {
   color:#3BD981 ;
 }
 
-body {
-  margin: 0px;
+
+form {
+  display: grid;
+  margin: auto; 
+}
+
+/* Buttons */
+
+.button {
+  background-color: #3BD981;
+  border: 0px;
+  border-radius: 10px;
+  color: black;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 10px auto;
+  text-align: center;
+  transition: 0.2s ease-in-out;
+  width: 200px;
+  height: 50px;
+  margin-top:30px;
+}
+
+.button:hover {
+  background-color: #4CBDFD;
 }
 
 
-/* Hero */
-
-.hero {
-  background:radial-gradient(#e8895a,#ef651b);
-}
-
-.hero-project1 {
-  background:#F2F3F5;
-}
-
-
-/* header */
+/* Header */
 .portfolio-header {
   align-items: center;
   display: flex;
@@ -75,26 +112,33 @@ body {
   justify-content: space-between;
 }
 
-.sinead-logo {
-  padding: 10px 30px;
-  width: 50px;
-}
-
-.portfolio-logo-container {
-  width: 150px;
-}
 
 .portfolio-nav {
   width: 400px;
 }
 
-/* navigation */
 
-.buttons-nav {
+/* Logo */
+.animate-logo{
+  padding-top: 25px;
+} 
+
+
+/* Navigation */
+
+.navbar{
+  min-height: 70px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: flex-end;
-  font-size: 8px;
+  padding: 0 100px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0px;
 }
 
 
@@ -108,6 +152,13 @@ body {
   background-color: transparent;
 }
 
+
+.nav-button-element:hover {
+  cursor: pointer;
+  color: #3BD981;
+  transition:0.5s ease;
+}
+
 .nav-button-element-selected {
   cursor: pointer;
   padding: 10px 30px;
@@ -117,146 +168,449 @@ body {
   border-style: none;
   background-color: transparent;
   border-bottom: 4px solid #3BD981;
-  
 }
 
-.header-description {
+.nav-button-element-selected:hover {
+  cursor: pointer;
+  color: #3BD981;
+  transition:0.5s ease;
+}
+
+/* Navigation for mobile */
+
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #3BD981;
+
+}
+
+@media(max-width:768px) {
+  .hamburger{
+    display: block;
+    padding:25px;
+
+  }
+
+  .hamburger.active .bar:nth-child(2){
+    opacity:0;
+  }
+
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu{
+    position:fixed;
+    left: 100%;
+    top: 70px;
+    gap:0;
+    flex-direction: column;
+    background-color: #F2F3F5;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-menu.active{
+    left:0;
+  }
+
+
+  .nav-button-element{
+    margin-bottom: 20px;
+  }
+
+  .nav-button-element-selected{
+    margin-bottom: 20px;
+  }
+
+
+  
+  .animate-logo{
+    display:none;
+  }
+
+  }
+
+
+
+
+
+/* Home, hero */
+
+.hero-home-section {
+  background:radial-gradient(#e8895a,#ef651b);
+}
+
+.hero-home {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.header-description-element {
-  padding: 50px 50px 50px 150px;
-  width: 50%;
+.hero-element {
+  padding: 50px 20px 50px 150px;
+  max-width: 650px;
 }
 
-
-.header-profile-image {
+.hero-home-profile-image {
   background-position: center center;
   background-size: cover;
   height: 200px;
-  padding: 50px 150px 50px 50px;
+  padding: 50px 150px 50px 20px;
+}
+
+.hero-all-project {
+  background:radial-gradient(#e8895a,#ef651b);
+  height: 300px;
 }
 
 
+/* All Project  */
 
-/* Project panels on Homepage */
-.home-projects-container {
-  padding: 50px 5px;
-  background-color: #28282A;
-  height: 600px;
+.hero-all-project-section {
+  background:#F2F3F5;
 }
 
-.home-projects-title {
-  font-size: 32px;
-  text-align: center;
-  color: white;
-}
 
-.home-three-projects-container {
+.all-projects-container {
   justify-content: center;
   display: flex;
-}
-
-.home-indiv-projects-container {
-  margin: 2%;
-  width: 30%;
-}
-
-.home-indiv-project-image {
-  align-items: center;
-  background-position: center center;
-  background-size: cover;
-  color: white;
-  display: flex;
   flex-direction: column;
-  height: 400px;
+  padding: 0px 150px 0px 150px;
+}
+
+.all-indiv-project-container {
+  margin-bottom: 2%;
+  width: 70%; 
+  background-color:#28282A ;
+  border-radius: 10px;
+  
+}
+
+.horizontal-project-panel {
+display: grid;
+align-items: center; 
+grid-template-columns:  1fr 1fr;
+column-gap: 10px;
+
+}
+
+.all-indiv-project-container:hover {
+    outline: 5px #3BD981 solid;
+    outline-offset: -5px;
+}
+
+
+.all-indiv-project-header {
+  background-position: center center;
+  background-size:cover;
+  
+  height: 250px; 
+  width: 250px;
+  /* 
+  
+  
+  display: flex;
+  flex-direction: row;
+  
   justify-content: space-around;
-  text-align: center;
-  border-radius: 15px;
+  text-align: center; */
 }
 
-.home-indiv-project-image:hover {
-  border: 5px solid #3BD981;
-  transition: 0.2s ease-in-out;
-}
+.all-project-description {
+  margin: 0;
+  min-height: 120px;
+  width: 600px;
+  padding: 20px;}
 
 
-/* Specific classes used for the custom background images for each section */
+
 .project1 { background-image: url('./images/projects-mtc.png'); }
 .project2 { background-image: url('./images/projects-ms.png'); }
 .project3 { background-image: url('./images/projects-fws.png');}
 
-/* Again, to achieve darkened image effect, we need to move interior content above the background image */
-.home-indiv-projects-header-content {
-  position: absolute;
-}
-
-.projects-indiv-title {
-  font-family: "Calistoga", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 24px;
-}
-
-.projects-indiv-subtitle {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 19px;
-}
 
 
-.home-projects-button {
-  background-color: #3BD981;
-  border-bottom: 2px solid #1c884c;
-  border-radius: 10px;
-  color: white;
-  cursor: pointer;
-  font-size: 12px;
-  margin: 10px auto;
-  text-align: center;
-  transition: 0.2s ease-in-out;
-  width: 200px;
-}
 
-.home-projects-button-text {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 19px;
-  color: white;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Casestudy, hero */
+
+.hero-casestudy {
+  background:#F2F3F5;
 }
 
 
 
-.home-projects-button:hover {
-  background-color: #1c884c;
-}
 
-/* Project page sections */
+
+
+
+
+
+/* Background sections */
+
+
 
 .panel-group {
   display: flex;
   overflow: hidden;
+  align-items:center;
+  background-color: #3BD981;
 }
 
 .panel-element {
-width:50%;
+min-width:50%;
+max-height: 480px;
 
 }
 
 .panel-element-description {
 padding: 50px 50px 50px 150px;
 background-color: #3BD981;
-float: left;
-padding-bottom: 1000px;
-margin-bottom: -1000px;
+
 }
 
 .panel-element-image {
-float: left;
-padding-bottom: 1000px;
-margin-bottom: -1000px;
+  max-height: 480px;
+
 }
+
+/* Challenges section */
+
+.laptop {
+  padding: 50px;
+}
+
+.challenge {
+  
+}
+
+.panel-group-1 {
+  display: flex;
+  align-items:center;
+  margin: 50px 50px 50px 50px;
+}
+
+.panel-group-2 {
+  display: flex;
+  align-items:top;
+  margin: 50px 150px 50px 150px;
+}
+
+.team {
+  width: 50%;
+  margin-right: 50px;
+}
+
+
+
+/* My role section */
+
+.role-right {
+  padding: 50px 150px 50px 25px;
+}
+
+.role-left {
+  padding: 50px 150px 50px 25px;
+}
+
+.grey-panel {
+  background-color: #28282A;
+  padding: 0px 0px 0px 150px;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  position:relative;
+}
+
+.grey-panel-title {
+  font-size: 32px;
+  text-align: left;
+  color: white;
+}
+
+.grey-body {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  color: white;
+}
+
+.light-grey-body {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+li::marker {
+  color: #3BD981;
+}
+
+
+.about-me {
+  background-color: #F2F3F5;
+  height: auto;
+}
+
+
+
+
+/* About me */
+
+.content-full-width {
+  padding: 100px 150px 0px 150px;
+  max-width: 800px;
+}
+  
+
+
+
+
+
+
+
+
+.casestudy-background {
+  background-color: #3BD981;
+  display: flex;
+  justify-content: center;
+  position:relative;
+  align-items:flex-end;
+  height: 350px;
+
+  
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Home projects */
+
+
+.home-projects-section {
+  padding: 50px 100px 50px 100px;
+  background-color: #28282A;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.home-project-title {
+  text-align: center;
+  color: white;
+}
+
+.home-all-projects-container {
+  justify-content: center;
+  display: flex;
+}
+
+.home-indiv-project-container {
+  margin: 1%;
+  width: 30%;
+}
+
+.home-indiv-project-container:hover {
+    outline: 5px #3BD981 solid;
+    outline-offset: -5px;
+}
+
+
+
+.home-indiv-project-header {
+  align-items: center;
+  background-position: center center;
+  background-size: cover;
+  color: #F2F3F5;
+  display: flex;
+  flex-direction: column;
+  height: 300px; 
+  justify-content: space-around;
+  text-align: center;
+}
+
+
+.project1 { background-image: url('./images/projects-mtc.png'); }
+.project2 { background-image: url('./images/projects-ms.png'); }
+.project3 { background-image: url('./images/projects-fws.png');}
+
+
+
+
+.home-project-description {
+  background-color: #F2F3F5;
+  margin: 0;
+  min-height: 120px;
+  padding: 20px;
+}
+
+
+
+
+@media(max-width:768px){
+
+.home-all-projects-container {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.home-indiv-project-container {
+  margin: 3%;
+  width: 100%;
+}
+}
+
+
+
+

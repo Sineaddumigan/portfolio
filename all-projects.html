@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <title>Sinead Dumigan Portfolio</title>
+      <title>All projects</title>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -15,7 +15,7 @@
       <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-      <div class="hero-home-section">
+      <section class="hero-all-project-section">
         <header class="portfolio-header">
           <!-- Animated logo using javascript -->
           <svg  class="animate-logo"  height="50px"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -28,8 +28,8 @@
               <!-- Navigation menu -->
           <nav class="navbar">
               <div class="nav-menu">
-                  <button class="nav-button-element-selected" onclick="document.location='./index.html'">Home</button>
-                  <button class="nav-button-element" onclick="document.location='./all-projects.html'">Projects</button>
+                  <button class="nav-button-element" onclick="document.location='./index.html'">Home</button>
+                  <button class="nav-button-element-selected" onclick="document.location='./all-projects.html'">Projects</button>
                   <button class="nav-button-element" onclick="document.location='./about-me.html'">About me</button>
               </div>
           </nav>
@@ -40,45 +40,46 @@
               <span class="bar"></span>
           </div>
         </header>
-        <div class="hero-home">
+        
           <div class="hero-element">
-              <h1>Hi, I'm Sinéad</h1>
-              <p>A user experience designer driven to create products and services that can simplify systems, improve experiences and be as inclusive as possible.</p>
+              <h1>All projects</h1>
+              <p>I have worked with a range of clients, from banks, retail to government departments. In the past few years my focus has been in the public sector.</p>
           </div>
-          <img class="hero-home-profile-image" src="./images/profile-photo.png" alt="A black and white profile photo of Sinead">
-        </div>
-      </div>
-      <section class="home-projects-section" >
-        <h2 class="home-project-title" >Projects</h2>
-        <section class="home-all-projects-container" >
-          <div class="home-indiv-project-container" id="project1link">
-            <header class="home-indiv-project-header  project1">
-            </header>
-            <div class="home-project-description">
-            <h3 style="color: #28282A;">Multiplication Tables Check<h3>
-            <p style="color: #28282A;">for the Standards and testing agency</p>
+        
+        <section class="all-projects-container" >
+            <div class="all-indiv-project-container" id="project1link">
+                <div class="horizontal-project-panel">
+                    <header class="all-indiv-project-header  project1">
+                    </header>
+                    <div class="all-project-description">
+                        <h3 style="color: #F2F3F5;">Multiplication Tables Check<h3>
+                        <p style="color: #F2F3F5;">for the Standards and testing agency</p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="home-indiv-project-container"  id="project2link">
-            <header class="home-indiv-project-header  project2">
-            </header>
-            <div class="home-project-description">
-            <h3 style="color: #28282A;">Modern Slavery Statement Registry<h3>
-            <p style="color: #28282A;">for the Home Office</p>
+            <div class="all-indiv-project-container"  id="project2link">
+                <div class="horizontal-project-panel">
+                    <!-- this is the image -->
+                    <header class="all-indiv-project-header project2 ">
+                    </header>
+                    <!-- this is the description -->
+                    <div class="all-project-description">
+                        <h3 style="color: #F2F3F5;">Modern Slavery Statement Registry<h3>
+                        <p style="color: #F2F3F5;">for the Home Office</p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="home-indiv-project-container"  id="project3link">
-            <header class="home-indiv-project-header  project3">
-            </header>
-            <div class="home-project-description">
-            <h3 style="color: #28282A;">Flood Warning System<h3>
-            <p style="color: #28282A;">for the Environment Agency</p>
+            <div class="all-indiv-project-container"  id="project3link">
+                <div class="horizontal-project-panel">
+                    <header class="all-indiv-project-header  project3">
+                    </header>
+                    <div class="all-project-description">
+                        <h3 style="color: #F2F3F5;">Flood Warning System<h3>
+                        <p style="color: #F2F3F5;">for the Environment Agency</p>
+                    </div>
+                </div>
             </div>
-          </div>
         </section>
-        <form action="./all-projects.html">
-        <button class="button">View all projects</button>
-        </form>
       </section>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
       <script src="app.js"></script>

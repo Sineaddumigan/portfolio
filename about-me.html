@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>About me</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+        <!-- Link to stylesheet -->
+        <link rel="stylesheet" href="./style.css">
+
+    </head>
+
+    <body class="about-me">
+        <header class="portfolio-header">
+            <!-- Animated logo using javascript -->
+            <svg  class="animate-logo"  height="50px"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Website-2024-(GA)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <circle id="large-circle" fill="#3BD981" cx="25" cy="25" r="25"></circle>
+                    <circle id="medium-circle" fill="#4CBDFD" cx="70.0357143" cy="23.952381" r="15"></circle>
+                    <circle id="small-circle" fill="#3BD981" cx="99.6071429" cy="23.9880952" r="10"></circle>
+                </g>
+            </svg>
+                <!-- Navigation menu -->
+            <nav class="navbar">
+                <div class="nav-menu">
+                    <button class="nav-button-element" onclick="document.location='./index.html'">Home</button>
+                    <button class="nav-button-element" onclick="document.location='./all-projects.html'">Projects</button>
+                    <button class="nav-button-element-selected" onclick="document.location='./about-me.html'">About me</button>
+                </div>
+            </nav>
+                <!-- Hamburger menu -->
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </header>
+        <div class="content-full-width">
+            <h1>About me</h1>
+            <p>I grew up in Hong Kong and have Chinese and Irish heritage. I went to the University of Leeds to do a Masters in Product Design and then moved to London and have been living there since.</p>
+            <p>I enjoy staying active and spending my free time training for triathlons, exploring the aerial arts like trapeze, silks, straps etc and when the opportunity arises, attempt to surf…</p>
+            <p>I am very passionate about design and enjoy staying curious about the problems people have and coming up with ideas on how their situations can be improved through simpler processes and more enjoyable experiences that truly solve their problems.</p>    
+            <p>I enjoy projects the most when there is a positive outcome that can improve society and the world in some way, however big or small.</p>   
+            <button class="button" onclick="document.location='./cv.pdf'">View my CV (pdf)</button>
+        </div>
+    </body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+
+</html>
