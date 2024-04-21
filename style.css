@@ -4,9 +4,6 @@
  
 }
 
-
-
-
 /* Google fonts */
 
 .calistoga-regular {
@@ -262,6 +259,23 @@ form {
   justify-content: space-between;
 }
 
+@media(max-width:768px) {
+  .hero-home{
+    flex-direction: column;
+    flex-flow:column;}
+  .hero-home-profile-image {order:1;}
+  .hero-element {order:2;}
+
+  }
+
+  
+
+
+
+
+
+
+
 .hero-element {
   padding: 50px 20px 50px 150px;
   max-width: 650px;
@@ -274,10 +288,7 @@ form {
   padding: 50px 150px 50px 20px;
 }
 
-.hero-all-project {
-  background:radial-gradient(#e8895a,#ef651b);
-  height: 300px;
-}
+
 
 
 /* All Project  */
@@ -322,14 +333,7 @@ column-gap: 10px;
   
   height: 250px; 
   width: 250px;
-  /* 
-  
-  
-  display: flex;
-  flex-direction: row;
-  
-  justify-content: space-around;
-  text-align: center; */
+ 
 }
 
 .all-project-description {
@@ -340,9 +344,9 @@ column-gap: 10px;
 
 
 
-.project1 { background-image: url('./images/projects-mtc.png'); }
-.project2 { background-image: url('./images/projects-ms.png'); }
-.project3 { background-image: url('./images/projects-fws.png');}
+.project1 { background-image: url('images/projects-mtc.png'); }
+.project2 { background-image: url('images/projects-ms.png'); }
+.project3 { background-image: url('images/projects-fws.png');}
 
 
 
@@ -610,6 +614,7 @@ li::marker {
   width: 100%;
 }
 }
+
 
 
 
