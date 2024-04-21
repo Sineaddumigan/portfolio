@@ -260,31 +260,9 @@ form {
   justify-content: space-between;
 }
 
-@media(max-width:768px) {
-  .hero-home{
-    flex-direction: column;
-    flex-flow:column;}
 
-  .hero-home-profile-image {
-    order:1;
-    height: 50px;
-    padding: 20px;
-  }
-
-  .hero-element {
-    order:2;
-    padding: 20px;
-  }
-  
-  }
 
   
-
-
-
-
-
-
 
 .hero-element {
   padding: 50px 20px 50px 150px;
@@ -299,7 +277,26 @@ form {
 }
 
 
+@media(max-width:768px) {
+  .hero-home{
+    flex-direction: column;
+    flex-flow:column;
+    align-items: center;
+  }
 
+  .hero-home-profile-image{
+    order:1;
+    height: 150px;
+    padding: 25px;
+  }
+
+  .hero-element {
+    order:2;
+    padding: 25px;
+    text-align: center;
+  }
+  
+  }
 
 /* All Project  */
 
