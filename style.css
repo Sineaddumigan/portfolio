@@ -224,6 +224,7 @@ form {
 
   .nav-menu.active{
     left:0;
+    width:100%
   }
 
 
@@ -263,9 +264,18 @@ form {
   .hero-home{
     flex-direction: column;
     flex-flow:column;}
-  .hero-home-profile-image {order:1;}
-  .hero-element {order:2;}
 
+  .hero-home-profile-image {
+    order:1;
+    height: 50px;
+    padding: 20px;
+  }
+
+  .hero-element {
+    order:2;
+    padding: 20px;
+  }
+  
   }
 
   
