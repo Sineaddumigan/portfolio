@@ -438,6 +438,54 @@ background-color: #3BD981;
 
 }
 
+
+@media(max-width:768px){
+.panel-group {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.panel-element-description {
+  padding: 25px;
+}
+
+.panel-group-1 {
+  display: flex;
+  align-items: center;
+  margin: 25px;
+  flex-direction: column;
+}
+
+.panel-group-2 {
+  display: flex;
+  margin: 25px;
+  flex-direction: column;
+}
+
+.grey-panel {
+  flex-direction: column;
+
+}
+
+.team {
+  width: 100%;
+}
+
+.role-right {
+  padding: 25px;
+}
+
+
+.role-left {
+  padding: 25px;
+}
+
+
+}
+
+
+
+
 /* Challenges section */
 
 .laptop {
