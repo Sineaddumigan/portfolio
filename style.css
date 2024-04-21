@@ -1,11 +1,9 @@
 *{
   padding:0;
   margin:0;
- 
 }
 
 /* Google fonts */
-
 .calistoga-regular {
   font-family: "Calistoga", serif;
   font-weight: 400;
@@ -25,7 +23,6 @@
 }
 
 /* Headings */
-
 h1 {
     font-family: "Calistoga", serif;
     font-weight: 400;
@@ -53,7 +50,6 @@ h3 {
 }
 
 /* Paragraphs, links, body */
-
 p {
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 400;
@@ -70,14 +66,12 @@ a {
   color:#3BD981 ;
 }
 
-
 form {
   display: grid;
   margin: auto; 
 }
 
 /* Buttons */
-
 .button {
   background-color: #3BD981;
   border: 0px;
@@ -100,7 +94,6 @@ form {
   background-color: #4CBDFD;
 }
 
-
 /* Header */
 .portfolio-header {
   align-items: center;
@@ -109,20 +102,16 @@ form {
   justify-content: space-between;
 }
 
-
 .portfolio-nav {
   width: 400px;
 }
-
 
 /* Logo */
 .animate-logo{
   padding-top: 25px;
 } 
 
-
 /* Navigation */
-
 .navbar{
   min-height: 70px;
   display: flex;
@@ -174,7 +163,6 @@ form {
 }
 
 /* Navigation for mobile */
-
 .hamburger{
   display: none;
   cursor: pointer;
@@ -188,14 +176,12 @@ form {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: #3BD981;
-
 }
 
 @media(max-width:768px) {
   .hamburger{
     display: block;
     padding:25px;
-
   }
 
   .hamburger.active .bar:nth-child(2){
@@ -244,12 +230,7 @@ form {
 
   }
 
-
-
-
-
 /* Home, hero */
-
 .hero-home-section {
   background:radial-gradient(#e8895a,#ef651b);
 }
@@ -259,10 +240,6 @@ form {
   align-items: center;
   justify-content: space-between;
 }
-
-
-
-  
 
 .hero-element {
   padding: 50px 20px 50px 150px;
@@ -275,7 +252,6 @@ form {
   height: 200px;
   padding: 50px 150px 50px 20px;
 }
-
 
 @media(max-width:768px) {
   .hero-home{
@@ -295,15 +271,12 @@ form {
     padding: 25px;
     text-align: center;
   }
-  
   }
 
 /* All Project  */
-
 .hero-all-project-section {
   background:#F2F3F5;
 }
-
 
 .all-projects-container {
   justify-content: center;
@@ -317,7 +290,6 @@ form {
   width: 70%; 
   background-color:#28282A ;
   border-radius: 10px;
-  
 }
 
 .horizontal-project-panel {
@@ -326,7 +298,6 @@ align-items: center;
 flex-direction: row;
 column-gap: 10px;
 border-radius: 10px;
-
 }
 
 .all-indiv-project-container:hover {
@@ -340,7 +311,6 @@ border-radius: 10px;
   background-size:cover;
   height: 250px; 
   width: 250px;
- 
 }
 
 .all-project-description {
@@ -350,14 +320,9 @@ border-radius: 10px;
   text-align: left;
   padding: 20px;}
 
-
-
 .project1 { background-image: url('images/projects-mtc.png'); }
 .project2 { background-image: url('images/projects-ms.png'); }
 .project3 { background-image: url('images/projects-fws.png');}
-
-
-
 
 @media(max-width:768px) {
   .all-projects-container {
@@ -377,42 +342,15 @@ border-radius: 10px;
 
   .all-project-description {
     width: auto;  
-    }
-
-
-    
+    } 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Casestudy, hero */
-
 .hero-casestudy {
   background:#F2F3F5;
 }
 
-
-
-
-
-
-
-
-
 /* Background sections */
-
-
 
 .panel-group {
   display: flex;
@@ -424,74 +362,21 @@ border-radius: 10px;
 .panel-element {
 min-width:50%;
 max-height: 480px;
-
 }
 
 .panel-element-description {
 padding: 50px 50px 50px 150px;
 background-color: #3BD981;
-
 }
 
 .panel-element-image {
   max-height: 480px;
-
 }
-
-
-@media(max-width:768px){
-.panel-group {
-  display: flex;
-  flex-direction: column-reverse;
-}
-
-.panel-element-description {
-  padding: 25px;
-}
-
-.panel-group-1 {
-  display: flex;
-  align-items: center;
-  margin: 25px;
-  flex-direction: column;
-}
-
-.panel-group-2 {
-  display: flex;
-  margin: 25px;
-  flex-direction: column;
-}
-
-.grey-panel {
-  flex-direction: column;
-
-}
-
-.team {
-  width: 100%;
-}
-
-.role-right {
-  padding: 25px;
-}
-
-
-.role-left {
-  padding: 25px;
-}
-
-
-}
-
-
-
 
 /* Challenges section */
-
 .laptop {
   padding: 50px;
 }
-
 
 .panel-group-1 {
   display: flex;
@@ -510,10 +395,7 @@ background-color: #3BD981;
   margin-right: 50px;
 }
 
-
-
 /* My role section */
-
 .role-right {
   padding: 50px 150px 50px 25px;
 }
@@ -556,30 +438,60 @@ li::marker {
   color: #3BD981;
 }
 
-
 .about-me {
   background-color: #F2F3F5;
   height: auto;
 }
 
-
+@media(max-width:768px){
+  .panel-group {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+  .panel-element-description {
+    padding: 25px;
+  }
+  
+  .panel-group-1 {
+    display: flex;
+    align-items: center;
+    margin: 25px;
+    flex-direction: column;
+  }
+  
+  .panel-group-2 {
+    display: flex;
+    margin: 25px;
+    flex-direction: column;
+  }
+  
+  .grey-panel {
+    flex-direction: column;
+    padding: 0px 0px 0px 25px;
+  }
+  
+  .team {
+    width: 100%;
+  }
+  
+  .role-right {
+    padding: 25px 25px 25px 25px;
+  }
+  
+  
+  .role-left {
+    padding: 25px 25px 25px 25px;
+  }
+  }
 
 
 /* About me */
-
 .content-full-width {
   padding: 100px 150px 0px 150px;
   max-width: 800px;
 }
   
-
-
-
-
-
-
-
-
 .casestudy-background {
   background-color: #3BD981;
   display: flex;
@@ -587,41 +499,15 @@ li::marker {
   position:relative;
   align-items:flex-end;
   height: 350px;
-
-  
- 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Home projects */
-
-
 .home-projects-section {
   padding: 50px 100px 50px 100px;
   background-color: #28282A;
   display: flex;
   flex-direction: column;
 }
-
-
 
 .home-project-title {
   text-align: center;
@@ -643,8 +529,6 @@ li::marker {
     outline-offset: -5px;
 }
 
-
-
 .home-indiv-project-header {
   align-items: center;
   background-position: center center;
@@ -657,13 +541,9 @@ li::marker {
   text-align: center;
 }
 
-
 .project1 { background-image: url('./images/projects-mtc.png'); }
 .project2 { background-image: url('./images/projects-ms.png'); }
 .project3 { background-image: url('./images/projects-fws.png');}
-
-
-
 
 .home-project-description {
   background-color: #F2F3F5;
@@ -672,25 +552,16 @@ li::marker {
   padding: 20px;
 }
 
-
-
-
 @media(max-width:768px){
-
 .home-all-projects-container {
   justify-content: center;
   display: flex;
   flex-direction: column;
 }
 
-
 .home-indiv-project-container {
   margin: 3%;
   width: 100%;
 }
 }
-
-
-
-
 

@@ -42,3 +42,4 @@ const divElement3 = document.querySelector('#project3link');
 divElement3.addEventListener('click', function() {
   window.location.href = "./project1.html";
 });
+
